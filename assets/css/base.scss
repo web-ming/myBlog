@@ -1,0 +1,30 @@
+
+body{
+    background-color: #efeff7;
+}
+
+
+html {
+    font-family: "Microsoft YaHei",Arial,sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    box-sizing: border-box;
+    height: 100%;
+    user-select:none;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+
+input,button{ border: none; border-radius: 0; background: none; outline: none; }
+p,span,ul,h1,h2,h3,h4,h5,h6,dd,div,body{margin: 0;padding: 0}
+ul{list-style: none;padding: 0;}
+i,em{font-style: normal}
+
+.hide{
+    display: none;   
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
