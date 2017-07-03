@@ -7,7 +7,7 @@ const service = axios.create({
 })
 
 service.interceptors.request.use(config => {
-    console.log(config.url);
+    //console.log(config.url);
     return config
 },error => {
     return Promise.reject(error)

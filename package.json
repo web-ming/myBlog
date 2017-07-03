@@ -4,12 +4,15 @@
   "description": "blog",
   "main": "index.js",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "node server",
+    "build": "cross-env NODE_ENV=production nuxt build",
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "author": "newbies_ming",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.16.2",
+    "cross-env": "^5.0.1",
     "express": "^4.15.3",
     "nuxt": "^1.0.0-alpha.4"
   },

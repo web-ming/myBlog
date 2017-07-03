@@ -16,7 +16,7 @@
         fetch ({store}) {
             store.dispatch('setTitle','myBlog')
             service.get('/api/router/rest.do?method=api.com.home.getStations&version=1.0.0&firstChannel=TOUCH&secondChannel=LVMM').then(res => {
-                console.log('index')
+                //console.log('index')
             }).catch(e => {
                 console.log(e);
             })

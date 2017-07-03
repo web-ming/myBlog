@@ -9,20 +9,17 @@ module.exports =  {
         }],
         title: 'my blog'
     },
-    dev: true,
+    dev: (process.env.NODE_ENV !== 'production'),
     css: [
         '~assets/css/base.scss'
     ],
     build: {
-        // extend(webpackConfig,{dev, isClient, isServer }){
-        //     webpackConfig.module.rules.push({
-        //         test: /\.scss$/,
-        //         loader: 'vue-style-loader!css-loader!sass-loader'
-        //     })
-        // },
         vendor: [
             'axios'
         ]
-    }
+    },
+    plugins: [
+        {src: '~plugins/iScroll.js',ssr: false}
+    ]
 
 }

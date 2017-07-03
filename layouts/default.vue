@@ -1,24 +1,34 @@
 
 <template>
     <div class="app">
-        <mobile-aside></mobile-aside>
-        <div class="app-main" :class='{open: mobileAsideShow}'>
+        <div class="app-head" :class='{open: mobileAsideShow}'>
             <mobilehead></mobilehead>
-            <div class="main-part"></div>
-                <nuxt></nuxt>
-            </div>
-            <div class="ui-mask" v-show='mobileAsideShow' @click='hideMobileAside'></div>
         </div>
+        <mobile-aside></mobile-aside>
+        <mobile-pull-refresh :next="refresh">
+            <div slot="list">
+                <div class="app-main" :class='{open: mobileAsideShow}'>
+
+
+                    <nuxt></nuxt>
+
+                    <div class="ui-mask" v-show='mobileAsideShow' @click='hideMobileAside'></div>
+                </div>
+            </div>
+        </mobile-pull-refresh>
+
+
     </div>
 </template>
 
 <script>
-    import {mobilehead,mobileAside} from '../components/mobile/index';
+    import {mobilehead,mobileAside,mobilePullRefresh} from '../components/mobile/index';
     export default {
         name: 'app',
         components: {
             mobilehead,
-            mobileAside
+            mobileAside,
+            mobilePullRefresh
         },
         computed: {
             mobileAsideShow(){
@@ -29,15 +39,25 @@
         methods: {
             hideMobileAside(){
                 this.$store.state.mobileAsideShow = false;
+            },
+            refresh() {
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        resolve()
+                    }, 2000)
+                })
             }
         }
     }
 </script>
 
 <style scoped>
-    .app-main{
+    .app-main,.app-head{
         transform: translateX(0);
         transition: transform .5s linear;
+    }
+    .app-head{
+        height: 45px;
     }
     .main-part{
         padding-top: 45px
