@@ -8,3 +8,4 @@ Vue-Blog By Nuxt.js + Vuex + Vue-router + Axios
 现在只是简单的架子，只有下拉刷新的功能
 
 - components/mobile/pullToRefresh 下拉刷新
+- components/mobile/backTotop     回到顶部
