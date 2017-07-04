@@ -42,7 +42,8 @@
       }
     },
     mounted() {
-      const container = this.$refs.container
+      const container = this.$refs.container;
+      let scrollTopDis;
       container.addEventListener('touchstart', (e) => {
         // 如果loading为true就代表刷新函数正在进行，此时阻止下拉操作，返回
         if (this.loading) { 
@@ -54,7 +55,8 @@
       })
       container.addEventListener('touchmove', (e) => {
         // 如果没有触摸起始点，返回
-        if (!this.touchStart) {
+        scrollTopDis = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+        if (!this.touchStart || scrollTopDis > 0) {
           return
         }
         if (this.loading) {
@@ -86,7 +88,8 @@
         }
       })
       container.addEventListener('touchend', (e) => {
-        if (this.distance === 0) {
+        scrollTopDis = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+        if (this.distance === 0 || scrollTopDis > 0) {
           return
         }
         if (this.loading) {

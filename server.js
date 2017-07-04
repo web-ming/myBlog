@@ -1,6 +1,6 @@
 const Nuxt = require('nuxt')
 const app  =  require('express')()
-const host = process.env.HOST || '10.115.1.9'
+const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 3000
 const config = require('./nuxt.config')
 config.dev = !(process.env.NODE_ENV === 'production')

@@ -1,7 +1,38 @@
 <template>
     <div>
         detail
+                    <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+                <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaaa</div>
     </div>
+
 </template>
 
 <script>

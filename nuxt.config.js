@@ -20,6 +20,13 @@ module.exports =  {
     },
     plugins: [
         {src: '~plugins/iScroll.js',ssr: false}
-    ]
+    ],
+    transition: {
+        name: 'showlist',
+        mode: 'out-in',
+        beforeEnter(el){
+            
+        }
+    }
 
 }
